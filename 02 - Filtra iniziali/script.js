@@ -2,13 +2,13 @@
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
-
+const result = []
 // Dichiara la funzione qui.
-function atLetter(array, lett) {
-    let lettera = String(lett);
+function atLetter(array, lett = "") {
+    const lettera = array[i];
     for (let i = 0; i < array.length; i++){
-        if (array[i].charAt(0) === lettera) {
-            console.log(array[i]);
+        if (lettera.charAt(0).toLowerCase() === lett.toLowerCase()) {
+          result.push(lett)
         }
     }
 }
